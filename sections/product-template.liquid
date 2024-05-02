@@ -1,3 +1,10 @@
+{% style %}
+  .zegsu-sold-main {
+    position: fixed;
+    top: 0;
+  }
+{% endstyle %}
+
 {%- capture section_settings -%}
 {
   "enableHistoryState": true,
@@ -14,6 +21,19 @@
   "useAjaxCart": {% if settings.cart_type == 'drawer' %}true{% else %}false{% endif %}
 }
 {%- endcapture -%}
+
+<div id="shopify-block-sold_count_sold_stock_counter_product_app_block_tHnffC" class="shopify-block shopify-app-block"><!-- Zegsu Sold Counter Widget -->
+<link class="zegsu-sold-counter-css" rel="stylesheet" href="https://zegsuapps.com/dist/css/sold-counter/widget.css?version=1.0.1">
+
+<div class="zegsu-sold-counter-marker" data-zegsu-sold-product-id="{{ product.id }}"></div>
+
+    
+    <div class="zegsu-sold-main" data-text-center="false" data-product-id="{{ product.id }}" style=";width:100%">
+    </div>
+<script class="zegsu-sold-counter-script" async="" defer="" src="https://zegsuapps.com/shopify/sold-counter/widget?v=2&amp;shop=two-poles-cosmetics.myshopify.com&amp;productId=8760219599183"></script>
+
+
+</div>
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
@@ -424,6 +444,9 @@ This is the root container for the zoom functionality. Must not be removed, as o
 
 
 {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+
+<div class="hulkapps-volumes"></div><div class="product-hulkapps-discount-code-html"></div>
+
 
 {% schema %}
 {

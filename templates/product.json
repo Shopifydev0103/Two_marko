@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-template",
+      "settings": {
+        "show_share_buttons": true,
+        "show_vendor": true,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "description_below_add_to_cart": false,
+        "selector_mode": "dropdown",
+        "show_color_swatch": false,
+        "show_color_carousel": false,
+        "show_quantity_selector": true,
+        "show_inventory_quantity": false,
+        "inventory_quantity_threshold": 0,
+        "show_price_in_button": false,
+        "show_payment_button": true,
+        "show_pickup_availability": false,
+        "image_size": "large",
+        "stack_images": true,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "tab_page_1_handle": "",
+        "tab_page_2_handle": "",
+        "reviews_enabled": false,
+        "featured_image_size": "large"
+      }
+    },
+    "product-custom-recommendation": {
+      "type": "product-custom-recommendation",
+      "blocks": {
+        "sold_count_sold_stock_counter_product_app_block_8Rcmf7": {
+          "type": "shopify:\/\/apps\/sold-count-sold-stock-counter\/blocks\/product-app-block\/d9479e74-8eda-475b-87a5-852507caa810",
+          "settings": {
+            "product_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "sold_count_sold_stock_counter_product_app_block_8Rcmf7"
+      ],
+      "settings": {
+        "heading": "Related Products",
+        "title": "Featured collection",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "related-products": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "heading": "You may also like",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "show_section": true,
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "product-footer": {
+      "type": "product-footer",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-custom-recommendation",
+    "related-products",
+    "recently-viewed-products",
+    "product-footer"
+  ]
+}

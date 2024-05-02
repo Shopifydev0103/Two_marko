@@ -1404,6 +1404,17 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "sold-out": {
+        "type": "sold-out",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#ffffff",
+          "text_color": "#ffffff",
+          "content": "",
+          "link": ""
+        }
       }
     },
     "content_for_index": [
