@@ -1409,9 +1409,10 @@
         "type": "sold-out",
         "settings": {
           "enable_bar": true,
+          "product": "",
           "home_page_only": false,
           "background": "#ffffff",
-          "text_color": "#ffffff",
+          "text_color": "#1c1b1b",
           "content": "",
           "link": ""
         }
